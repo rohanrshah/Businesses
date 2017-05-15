@@ -1,0 +1,11 @@
+##Welcome to Businesses.
+
+This website puts up details about how a specific business works in India.
+
+{% for post in site.posts %}
+
+{{ post.title }}
+
+{{ post.date | date: "%B %e, %Y" }} . {{ post.category }} .
+
+{% endfor %}
